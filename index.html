@@ -20,19 +20,19 @@
             <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
                 <span></span><span></span><span></span>
             </button>
-
-            <nav id="mainNav">
-                <ul>
-                    <li><a href="#inicio"    class="nav-link">Início</a></li>
-                    <li><a href="#sobre"     class="nav-link">Sobre Nós</a></li>
-                    <li><a href="#servicos"  class="nav-link">Serviços</a></li>
-                    <li><a href="#disciplinas" class="nav-link">Disciplinas</a></li>
-                    <li><a href="#horarios"  class="nav-link">Horários</a></li>
-                    <li><a href="#contactos" class="nav-link nav-cta">Contactos</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
+
+    <!-- Nav fora do header para evitar conflito de stacking context (backdrop-filter) -->
+    <nav id="mainNav">
+        <ul>
+            <li><a href="#inicio"      class="nav-link">Início</a></li>
+            <li><a href="#sobre"       class="nav-link">Sobre Nós</a></li>
+            <li><a href="#servicos"    class="nav-link">Serviços</a></li>
+            <li><a href="#disciplinas" class="nav-link">Disciplinas</a></li>
+            <li><a href="#contactos"   class="nav-link nav-cta">Contactos</a></li>
+        </ul>
+    </nav>
 
     <!-- Overlay escuro quando sidebar mobile está aberta -->
     <div class="nav-overlay" id="navOverlay"></div>
@@ -250,77 +250,6 @@
                 <div class="disc-item">
                     <span class="disc-icon">&#128292;</span>
                     <span>Filosofia</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== HORÁRIOS ========== -->
-    <section id="horarios" class="section horarios">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Funcionamento</span>
-                <h2>Horários</h2>
-                <p class="section-sub">Estamos disponíveis em horários que se adaptam à tua agenda.</p>
-            </div>
-
-            <div class="horarios-wrapper reveal">
-                <table class="horario-table">
-                    <thead>
-                        <tr>
-                            <th>Dia</th>
-                            <th>Manhã</th>
-                            <th>Tarde</th>
-                            <th>Noite</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Segunda-feira</strong></td>
-                            <td>09:00 – 13:00</td>
-                            <td>14:00 – 18:00</td>
-                            <td>18:00 – 21:00</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Terça-feira</strong></td>
-                            <td>09:00 – 13:00</td>
-                            <td>14:00 – 18:00</td>
-                            <td>18:00 – 21:00</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Quarta-feira</strong></td>
-                            <td>09:00 – 13:00</td>
-                            <td>14:00 – 18:00</td>
-                            <td>18:00 – 21:00</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Quinta-feira</strong></td>
-                            <td>09:00 – 13:00</td>
-                            <td>14:00 – 18:00</td>
-                            <td>18:00 – 21:00</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Sexta-feira</strong></td>
-                            <td>09:00 – 13:00</td>
-                            <td>14:00 – 18:00</td>
-                            <td>18:00 – 20:00</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Sábado</strong></td>
-                            <td>09:00 – 13:00</td>
-                            <td>—</td>
-                            <td>—</td>
-                        </tr>
-                        <tr class="fechado">
-                            <td><strong>Domingo</strong></td>
-                            <td colspan="3">Encerrado</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="horario-nota">
-                    <span class="nota-icon">&#8505;</span>
-                    As aulas individuais podem ser agendadas fora destes horários mediante disponibilidade do professor.
                 </div>
             </div>
         </div>

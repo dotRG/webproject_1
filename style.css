@@ -187,7 +187,18 @@ img { max-width: 100%; display: block; }
 .logo-icon { font-size: 1.5rem; }
 .logo-text strong { color: var(--accent-l); }
 
-/* Nav */
+/* Nav — posicionado como fixed no desktop para aparecer no header */
+#mainNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: var(--header-h);
+    display: flex;
+    align-items: center;
+    padding: 0 max(24px, calc((100vw - var(--max-w)) / 2 + 24px));
+    z-index: 1002; /* acima do header (1000) e overlay (1001) */
+}
+
 #mainNav ul {
     display: flex;
     align-items: center;
@@ -512,80 +523,6 @@ img { max-width: 100%; display: block; }
 .disc-icon { font-size: 1.7rem; }
 
 /* =====================================================
-   HORÁRIOS
-   ===================================================== */
-.horarios { background: var(--light); }
-
-.horarios-wrapper {
-    max-width: 760px;
-    margin: 0 auto;
-}
-
-.horario-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: var(--white);
-    border-radius: var(--radius);
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    margin-bottom: 20px;
-}
-
-.horario-table thead {
-    background: linear-gradient(135deg, var(--primary), var(--primary-l));
-    color: var(--white);
-}
-
-.horario-table th {
-    padding: 16px 20px;
-    text-align: left;
-    font-size: .88rem;
-    font-weight: 700;
-    letter-spacing: .04em;
-    text-transform: uppercase;
-}
-
-.horario-table td {
-    padding: 14px 20px;
-    border-bottom: 1px solid var(--border);
-    font-size: .93rem;
-    color: var(--text-m);
-}
-
-.horario-table tbody tr:last-child td {
-    border-bottom: none;
-}
-
-.horario-table tbody tr:hover td {
-    background: rgba(39,86,168,.04);
-}
-
-.horario-table tr.fechado td {
-    color: #e53e3e;
-    text-align: center;
-}
-
-.horario-nota {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    background: rgba(39,174,96,.08);
-    border-left: 4px solid var(--accent);
-    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-    padding: 14px 18px;
-    font-size: .9rem;
-    color: var(--text-m);
-}
-
-.nota-icon {
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--accent);
-    flex-shrink: 0;
-    line-height: 1.5;
-}
-
-/* =====================================================
    CONTACTOS
    ===================================================== */
 .contactos {
@@ -776,10 +713,6 @@ img { max-width: 100%; display: block; }
         gap: 40px;
     }
 
-    .horario-table th:nth-child(3),
-    .horario-table td:nth-child(3) {
-        display: none;
-    }
 }
 
 /* Overlay (mobile sidebar) */
@@ -788,7 +721,7 @@ img { max-width: 100%; display: block; }
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,.45);
-    z-index: 1000; /* entre header (1000) e sidebar (1001) */
+    z-index: 1001; /* acima do header (1000), abaixo da sidebar (1002) */
     opacity: 0;
     transition: opacity .3s ease;
 }
@@ -806,17 +739,20 @@ img { max-width: 100%; display: block; }
     .menu-toggle { display: flex; }
 
     #mainNav {
+        /* sobrepõe os estilos desktop: sidebar lateral */
         position: fixed;
         top: 0;
         left: -280px;
+        right: auto;
         width: 280px;
         height: 100vh;
-        height: 100dvh; /* suporte a browsers modernos (exclui barra do browser mobile) */
-        background: var(--primary);
+        height: 100dvh;
+        display: block;
         padding: 80px 24px 32px;
+        background: var(--primary);
         transition: left .35s cubic-bezier(.4,0,.2,1);
         box-shadow: 4px 0 32px rgba(0,0,0,.25);
-        z-index: 1001; /* acima do header (1000) */
+        z-index: 1002;
         overflow-y: auto;
     }
 
@@ -850,14 +786,6 @@ img { max-width: 100%; display: block; }
 
     /* Disciplinas */
     .disciplinas-grid { grid-template-columns: repeat(2, 1fr); }
-
-    /* Horários – simplificado */
-    .horario-table th:nth-child(2),
-    .horario-table td:nth-child(2),
-    .horario-table th:nth-child(3),
-    .horario-table td:nth-child(3) {
-        display: none;
-    }
 
     /* Formulário */
     .contacto-form { padding: 28px 20px; }
