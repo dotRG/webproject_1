@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCenter – Centro de Explicações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== HEADER FIXO ========== -->
+    <header id="header">
+        <div class="container header-inner">
+            <a href="#inicio" class="logo">
+                <span class="logo-icon">&#127979;</span>
+                <span class="logo-text">Edu<strong>Center</strong></span>
+            </a>
+
+            <!-- Botão hambúrguer (mobile) -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#inicio"    class="nav-link">Início</a></li>
+                    <li><a href="#sobre"     class="nav-link">Sobre Nós</a></li>
+                    <li><a href="#servicos"  class="nav-link">Serviços</a></li>
+                    <li><a href="#disciplinas" class="nav-link">Disciplinas</a></li>
+                    <li><a href="#horarios"  class="nav-link">Horários</a></li>
+                    <li><a href="#contactos" class="nav-link nav-cta">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Overlay escuro quando sidebar mobile está aberta -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ========== HERO (INÍCIO) ========== -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content reveal">
+            <span class="hero-badge">Centro de Explicações em Lisboa</span>
+            <h1>O teu sucesso académico<br>começa <span class="highlight">aqui</span></h1>
+            <p class="hero-sub">
+                Apoio escolar personalizado para todos os anos e disciplinas.
+                Professores experientes, ambiente motivador e resultados reais.
+            </p>
+            <a href="#contactos" class="btn btn-primary">Marcar Explicação</a>
+            <a href="#servicos"  class="btn btn-outline">Ver Serviços</a>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 1080,0 1440,60 L1440,100 L0,100 Z" fill="#ffffff"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ========== SOBRE NÓS ========== -->
+    <section id="sobre" class="section sobre">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Quem Somos</span>
+                <h2>Sobre o EduCenter</h2>
+                <p class="section-sub">Mais de 10 anos a transformar dificuldades em conquistas.</p>
+            </div>
+
+            <div class="sobre-grid">
+                <div class="sobre-text reveal">
+                    <p>
+                        O <strong>EduCenter</strong> nasceu da convicção de que todos os alunos têm
+                        o potencial de alcançar o sucesso académico — bastam as ferramentas certas
+                        e o acompanhamento adequado. Desde 2014, ajudamos centenas de alunos do
+                        1.º ciclo ao ensino secundário a superar dificuldades, ganhar confiança e
+                        atingir os seus objetivos.
+                    </p>
+                    <p>
+                        A nossa equipa é composta por professores qualificados e apaixonados pelo
+                        ensino, que adaptam as suas metodologias ao ritmo e estilo de aprendizagem
+                        de cada aluno.
+                    </p>
+                </div>
+
+                <div class="valores-grid reveal">
+                    <div class="valor-card">
+                        <div class="valor-icon">&#127919;</div>
+                        <h4>Missão</h4>
+                        <p>Proporcionar um apoio escolar de excelência, centrado no aluno.</p>
+                    </div>
+                    <div class="valor-card">
+                        <div class="valor-icon">&#10024;</div>
+                        <h4>Visão</h4>
+                        <p>Ser o centro de referência no acompanhamento académico em Lisboa.</p>
+                    </div>
+                    <div class="valor-card">
+                        <div class="valor-icon">&#129309;</div>
+                        <h4>Valores</h4>
+                        <p>Dedicação, rigor, respeito e confiança em cada sessão.</p>
+                    </div>
+                    <div class="valor-card">
+                        <div class="valor-icon">&#127942;</div>
+                        <h4>Resultados</h4>
+                        <p>95% dos nossos alunos melhoram as notas no primeiro trimestre.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVIÇOS ========== -->
+    <section id="servicos" class="section servicos">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">O que Oferecemos</span>
+                <h2>Os Nossos Serviços</h2>
+                <p class="section-sub">Soluções de aprendizagem pensadas para cada necessidade.</p>
+            </div>
+
+            <div class="servicos-grid">
+
+                <!-- Explicações individuais -->
+                <div class="servico-card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="16" r="8" stroke="currentColor" stroke-width="3"/>
+                            <path d="M8 40c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Explicações Individuais</h3>
+                    <p>Aulas 100% dedicadas ao aluno, ao seu ritmo, nas suas dificuldades específicas. O método mais eficaz para progressos rápidos.</p>
+                    <ul class="card-list">
+                        <li>Plano de aulas personalizado</li>
+                        <li>Acompanhamento contínuo</li>
+                        <li>Flexibilidade de horário</li>
+                    </ul>
+                </div>
+
+                <!-- Explicações em grupo -->
+                <div class="servico-card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="3"/>
+                            <circle cx="32" cy="16" r="6" stroke="currentColor" stroke-width="3"/>
+                            <path d="M4 38c0-6.627 5.373-12 12-12h16c6.627 0 12 5.373 12 12" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Explicações em Grupo</h3>
+                    <p>Grupos reduzidos (máx. 4 alunos) para quem prefere aprender em ambiente colaborativo, com custo mais acessível.</p>
+                    <ul class="card-list">
+                        <li>Grupos até 4 alunos</li>
+                        <li>Aprendizagem colaborativa</li>
+                        <li>Preço mais acessível</li>
+                    </ul>
+                </div>
+
+                <!-- Apoio ao Estudo -->
+                <div class="servico-card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="6" width="32" height="36" rx="3" stroke="currentColor" stroke-width="3"/>
+                            <line x1="16" y1="18" x2="32" y2="18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            <line x1="16" y1="26" x2="32" y2="26" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            <line x1="16" y1="34" x2="24" y2="34" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Apoio ao Estudo</h3>
+                    <p>Espaço supervisionado para fazer trabalhos de casa, estudar e organizar os conteúdos com orientação de um professor.</p>
+                    <ul class="card-list">
+                        <li>Sala de estudo equipada</li>
+                        <li>Supervisão pedagógica</li>
+                        <li>Organização do estudo</li>
+                    </ul>
+                </div>
+
+                <!-- Preparação para Exames -->
+                <div class="servico-card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4L28.5 16H42L31.5 23.5L36 36L24 28.5L12 36L16.5 23.5L6 16H19.5L24 4Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Preparação para Exames</h3>
+                    <p>Programas intensivos antes dos exames nacionais e provas de aferição, com simulações e revisão de toda a matéria.</p>
+                    <ul class="card-list">
+                        <li>Simulações de exame</li>
+                        <li>Revisão completa</li>
+                        <li>Técnicas anti-stress</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DISCIPLINAS ========== -->
+    <section id="disciplinas" class="section disciplinas">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Áreas de Ensino</span>
+                <h2>Disciplinas</h2>
+                <p class="section-sub">Cobrimos as principais disciplinas do currículo nacional.</p>
+            </div>
+
+            <div class="disciplinas-grid reveal">
+                <div class="disc-item">
+                    <span class="disc-icon">&#10133;</span>
+                    <span>Matemática</span>
+                </div>
+                <div class="disc-item">
+                    <span class="disc-icon">&#128218;</span>
+                    <span>Português</span>
+                </div>
+                <div class="disc-item">
+                    <span class="disc-icon">&#127758;</span>
+                    <span>Inglês</span>
+                </div>
+                <div class="disc-item">
+                    <span class="disc-icon">&#9889;</span>
+                    <span>Física e Química</span>
+                </div>
+                <div class="disc-item">
+                    <span class="disc-icon">&#127807;</span>
+                    <span>Biologia</span>
+                </div>
+                <div class="disc-item">
+                    <span class="disc-icon">&#128205;</span>
+                    <span>Geografia</span>
+                </div>
+                <div class="disc-item">
+                    <span class="disc-icon">&#127981;</span>
+                    <span>História</span>
+                </div>
+                <div class="disc-item">
+                    <span class="disc-icon">&#128483;</span>
+                    <span>Francês</span>
+                </div>
+                <div class="disc-item">
+                    <span class="disc-icon">&#128187;</span>
+                    <span>Informática</span>
+                </div>
+                <div class="disc-item">
+                    <span class="disc-icon">&#128200;</span>
+                    <span>Economia</span>
+                </div>
+                <div class="disc-item">
+                    <span class="disc-icon">&#128396;</span>
+                    <span>Geometria Descritiva</span>
+                </div>
+                <div class="disc-item">
+                    <span class="disc-icon">&#128292;</span>
+                    <span>Filosofia</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== HORÁRIOS ========== -->
+    <section id="horarios" class="section horarios">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Funcionamento</span>
+                <h2>Horários</h2>
+                <p class="section-sub">Estamos disponíveis em horários que se adaptam à tua agenda.</p>
+            </div>
+
+            <div class="horarios-wrapper reveal">
+                <table class="horario-table">
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Manhã</th>
+                            <th>Tarde</th>
+                            <th>Noite</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Segunda-feira</strong></td>
+                            <td>09:00 – 13:00</td>
+                            <td>14:00 – 18:00</td>
+                            <td>18:00 – 21:00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Terça-feira</strong></td>
+                            <td>09:00 – 13:00</td>
+                            <td>14:00 – 18:00</td>
+                            <td>18:00 – 21:00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Quarta-feira</strong></td>
+                            <td>09:00 – 13:00</td>
+                            <td>14:00 – 18:00</td>
+                            <td>18:00 – 21:00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Quinta-feira</strong></td>
+                            <td>09:00 – 13:00</td>
+                            <td>14:00 – 18:00</td>
+                            <td>18:00 – 21:00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sexta-feira</strong></td>
+                            <td>09:00 – 13:00</td>
+                            <td>14:00 – 18:00</td>
+                            <td>18:00 – 20:00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sábado</strong></td>
+                            <td>09:00 – 13:00</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr class="fechado">
+                            <td><strong>Domingo</strong></td>
+                            <td colspan="3">Encerrado</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="horario-nota">
+                    <span class="nota-icon">&#8505;</span>
+                    As aulas individuais podem ser agendadas fora destes horários mediante disponibilidade do professor.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACTOS ========== -->
+    <section id="contactos" class="section contactos">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Fala Connosco</span>
+                <h2>Contactos</h2>
+                <p class="section-sub">Estamos aqui para responder a todas as tuas questões.</p>
+            </div>
+
+            <div class="contactos-grid">
+
+                <!-- Info de contacto -->
+                <div class="contacto-info reveal">
+                    <div class="info-item">
+                        <div class="info-icon">&#128205;</div>
+                        <div>
+                            <h4>Morada</h4>
+                            <p>Rua da Aprendizagem, 42, 2.º Esq.<br>1200-001 Lisboa</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">&#128222;</div>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p><a href="tel:+351210000000">+351 21 000 00 00</a></p>
+                            <p><a href="tel:+351910000000">+351 91 000 00 00</a> (telemóvel)</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">&#128140;</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:geral@educenter.pt">geral@educenter.pt</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário -->
+                <form class="contacto-form reveal" id="contactForm" novalidate>
+                    <h3>Enviar Mensagem</h3>
+
+                    <div class="form-group">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="O teu nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="o-teu-email@exemplo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto">
+                            <option value="">Seleciona um assunto</option>
+                            <option>Informações gerais</option>
+                            <option>Marcar explicação</option>
+                            <option>Preços e horários</option>
+                            <option>Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreve a tua mensagem aqui..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+
+                    <!-- Mensagem de feedback (JS) -->
+                    <div class="form-feedback" id="formFeedback"></div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-logo">
+                <span class="logo-icon">&#127979;</span>
+                <span class="logo-text">Edu<strong>Center</strong></span>
+            </div>
+            <p class="footer-copy">
+                &copy; <span id="currentYear"></span> EduCenter – Centro de Explicações. Todos os direitos reservados.
+            </p>
+            <p class="footer-sub">Feito com &#10084; para os nossos alunos.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
